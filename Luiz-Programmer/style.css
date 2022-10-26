@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/*
+cores:
+#5BFF33 verde,
+#7D14CC roxo,
+
+sombras:
+#10031A roxo-10,
+#170426 roxo-15,
+#1F0533 roxo-20,
+#270640 roxo-25.
+*/
+
+:root{
+  --green: #2FFF63;
+  --yellow: #FFD545;
+  --red: #FF303C;
+
+  --grey-5: #0D0C0C;
+  --grey-10: #1A1917;
+  --grey-15: #262523;
+  --grey-20: #33322F;
+  --grey-25: #403E3B;
+
+  --font: 'Rubik', sans-serif;
+}
+*{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  color: white;
+  line-height: 1.4em;
+}
+body{
+  background: var(--grey-5);
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+/* Seção dos celulares */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 3em;
+  padding: 0 1em;
+
+  color: white;
+  font-weight: 900;
+
+  background: var(--grey-20);
+}
+.close-me{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.main::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.about-me{
+  position: absolute;
+  top: 0;
+
+  width: 250px;
+  height: 100vh;
+
+  background: var(--grey-20);
+  overflow: hidden;
+}
+.me{
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  padding: 1em;
+  line-height: 1.5em;
+
+  width: 250px;
+  height: 250px;
+  background: var(--grey-25);
+}
+.avatar{
+  width: 100px;
+
+  margin: 8px 0;
+
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.name{
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+.last-name{
+  color: var(--green);
+}
+.job{
+  color: grey;
+}
+.main-me{
+  padding: 250px 1em 3em;
+  height: 100%;
+
+  overflow: auto;
+}
+.section-me{
+  padding: 1.5em 0;
+  border-bottom: .5px solid grey;
+}
+.icons{
+  font-size: 1.5em;
+  color: white;
+}
+.icons-lang{
+  font-size: 2em;
+}
+.percent{
+  width: 100%;
+  height: .3em;
+
+  border-radius: .5em;
+  background: linear-gradient(to right, var(--green) var(--i), var(--grey-10) calc(100% - var(--i)));
+}
+.learning{
+  font-size: .8em;
+  color: grey;
+}
+.datas{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: .8em;
+}
+.data{
+  color: grey;
+}
+.footer-me{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  position: fixed;
+  bottom: 0;
+
+  width: 250px;
+  height: 3em;
+
+  color: white;
+
+  background: var(--grey-25);
+}
+[class*="col-"] {
+  width: 100%;
+  padding: 10px;
+}
+/* Seção dos tablets */
+@media (min-width: 600px) {
+  .col-tb-1 {width: 8.33%;}
+  .col-tb-2 {width: 16.66%;}
+  .col-tb-3 {width: 25%;}
+  .col-tb-4 {width: 33.33%;}
+  .col-tb-5 {width: 41.66%;}
+  .col-tb-6 {width: 50%;}
+  .col-tb-7 {width: 58.33%;}
+  .col-tb-8 {width: 66.66%;}
+  .col-tb-9 {width: 75%;}
+  .col-tb-10 {width: 83.33%;}
+  .col-tb-11 {width: 91.66%;}
+  .col-tb-12 {width: 100%;}
+}
+/* Seção dos desktops */
+@media (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
