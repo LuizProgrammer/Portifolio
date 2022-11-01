@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portifolio - Luiz Programmer</title>
 
@@ -9,155 +9,179 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <script src="./load.js" defer></script>
+  <script src="./actionB.js" defer></script>
 </head>
 
 <body>
-  <div class="about-me">
-    <div class="head-me">
-      <i class="material-symbols-outlined close-me">more_vert</i>
+
+  <aside id="about" class="me">
+    <header class="me">
+      <i id="closeMe" class="material-symbols-outlined icon">more_vert</i>
       <div class="face">
         <img src="https://avatars.githubusercontent.com/u/20600529?v=4" alt="foto perfil">
       </div>
       <p class="name">Luiz <span>O. Martins</span></p>
       <p class="work">Front-end Júnior</p>
-    </div>
+    </header>
 
     <!-- conteudo principal -->
-    <div class="main-me">
+    <main class="me">
 
-        <section class="info-me">
+      <section class="info-me section-me">
+        <div class="key-value">
+          <p>Bairro:</p>
+          <p class="infos">Monte Castelo</p>
+        </div>
+        <div class="key-value">
+          <p>Cidade:</p>
+          <p class="infos">Fortaleza-CE</p>
+        </div>
+        <div class="key-value">
+          <p>Idade:</p>
+          <p class="age" class="data"></p>
+        </div>
+      </section>
+
+      <!-- progressbar circular -->
+      <section class="lang_dev section-me">
+
+        <div class="column">
+          <div class="outer html">
+            <div class="insider">
+              <p class="skill"><span class="value_html">0</span>%</p>
+            </div>
+            <svg id="blur">
+              <circle></circle>
+            </svg>
+            <svg>
+              <circle></circle>
+            </svg>
+          </div>
+          <i class="material-symbols-outlined icons-dev">html</i>
+        </div>
+
+        <div class="column">
+          <div class="outer css">
+            <div class="insider">
+              <p class="skill"><span class="value_css">0</span>%</p>
+            </div>
+            <svg id="blur">
+              <circle></circle>
+            </svg>
+            <svg>
+              <circle></circle>
+            </svg>
+          </div>
+          <i class="material-symbols-outlined icons-dev">css</i>
+        </div>
+
+        <div class="column">
+          <div class="outer script">
+            <div class="insider">
+              <p class="skill"><span class="value_script">0</span>%</p>
+            </div>
+            <svg id="blur">
+              <circle></circle>
+            </svg>
+            <svg>
+              <circle></circle>
+            </svg>
+          </div>
+          <i class="material-symbols-outlined icons-dev">javascript</i>
+        </div>
+
+      </section>
+      <!-- progressbar circular -->
+
+      <!-- progressbar linear -->
+      <section class="ing section-me">
+        <p>Ingles</p>
+
+        <div class="ing-area">
           <div class="key-value">
-            <p>Bairro:</p>
-            <p class="infos">Monte Castelo</p>
+            <p class="skill">Reader:</p>
+            <p class="skill"><span class="value_read">0</span>%</p>
           </div>
+          <div class="info read">
+            <div class="bar"></div>
+            <svg id="blur">
+              <line y1="2" x1="2" y2="2" x2="216"/>
+            </svg>
+            <svg>
+              <line y1="2" x1="2" y2="2" x2="216"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ing-area">
           <div class="key-value">
-            <p>Cidade:</p>
-            <p class="infos">Fortaleza-CE</p>
+            <p class="skill">Writer:</p>
+            <p class="skill"><span class="value_write">0</span>%</p>
           </div>
+          <div class="info write">
+            <div class="bar"></div>
+            <svg id="blur">
+              <line y1="2" x1="2" y2="2" x2="216"/>
+            </svg>
+            <svg>
+              <line y1="2" x1="2" y2="2" x2="216"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ing-area">
           <div class="key-value">
-            <p>Idade:</p>
-            <p class="age" class="data"></p>
+            <p class="skill">Listener:</p>
+            <p class="skill"><span class="value_listen">0</span>%</p>
           </div>
-        </section>
-
-        <!-- progressbar circular -->
-        <section class="lang_dev">
-
-          <div class="column">
-            <div class="outer html">
-              <div class="insider">
-                <p class="skill"><span class="value_html">0</span>%</p>
-              </div>
-              <svg id="blur">
-                <circle></circle>
-              </svg>
-              <svg>
-                <circle></circle>
-              </svg>
-            </div>
-            <i class="material-symbols-outlined icons-dev">html</i>
+          <div class="info listen">
+            <div class="bar"></div>
+            <svg id="blur">
+              <line y1="2" x1="2" y2="2" x2="216"/>
+            </svg>
+            <svg>
+              <line y1="2" x1="2" y2="2" x2="216"/>
+            </svg>
           </div>
+        </div>
 
-          <div class="column">
-            <div class="outer css">
-              <div class="insider">
-                <p class="skill"><span class="value_css">0</span>%</p>
-              </div>
-              <svg id="blur">
-                <circle></circle>
-              </svg>
-              <svg>
-                <circle></circle>
-              </svg>
-            </div>
-            <i class="material-symbols-outlined icons-dev">css</i>
-          </div>
+      </section>
+      <!-- progressbar linear -->
 
-          <div class="column">
-            <div class="outer script">
-              <div class="insider">
-                <p class="skill"><span class="value_script">0</span>%</p>
-              </div>
-              <svg id="blur">
-                <circle></circle>
-              </svg>
-              <svg>
-                <circle></circle>
-              </svg>
-            </div>
-            <i class="material-symbols-outlined icons-dev">javascript</i>
-          </div>
-
-        </section>
-        <!-- progressbar circular -->
-
-        <!-- progressbar linear -->
-        <section class="ing">
-          <p>Ingles</p>
-
-          <div class="ing-area">
-            <div class="key-value">
-              <p class="skill">Reader:</p>
-              <p class="skill"><span class="value_read">0</span>%</p>
-            </div>
-            <div class="info read">
-              <div class="bar"></div>
-              <svg id="blur">
-                <line y1="2" x1="2" y2="2" x2="216"/>
-              </svg>
-              <svg>
-                <line y1="2" x1="2" y2="2" x2="216"/>
-              </svg>
-            </div>
-          </div>
-
-          <div class="ing-area">
-            <div class="key-value">
-              <p class="skill">Writer:</p>
-              <p class="skill"><span class="value_write">0</span>%</p>
-            </div>
-            <div class="info write">
-              <div class="bar"></div>
-              <svg id="blur">
-                <line y1="2" x1="2" y2="2" x2="216"/>
-              </svg>
-              <svg>
-                <line y1="2" x1="2" y2="2" x2="216"/>
-              </svg>
-            </div>
-          </div>
-
-          <div class="ing-area">
-            <div class="key-value">
-              <p class="skill">Listener:</p>
-              <p class="skill"><span class="value_listen">0</span>%</p>
-            </div>
-            <div class="info listen">
-              <div class="bar"></div>
-              <svg id="blur">
-                <line y1="2" x1="2" y2="2" x2="216"/>
-              </svg>
-              <svg>
-                <line y1="2" x1="2" y2="2" x2="216"/>
-              </svg>
-            </div>
-          </div>
-
-        </section>
-        <!-- progressbar linear -->
-
-    </div>
+    </main>
     <!-- conteudo principal -->
 
-    <div class="social">
+    <footer class="me-social">
       <a class="fa-brands fa-whatsapp" href="#"></a>
       <a class="fa-brands fa-linkedin-in" href="#"></a>
       <a class="fa-brands fa-instagram" href="#"></a>
       <a class="fa-brands fa-github" href="#"></a>
-    </div>
-  </div>
+    </footer>
 
+  </aside><!-- aside about-me -->
+
+  <aside class="menu">
+    <div class="menu__close">
+      <i class="material-symbols-outlined icon">close</i>
+    </div>
+    <ul class="menu__items">
+
+      <li><a class="menu__item" href="#">Projetos<i class="material-symbols-outlined icon">checklist</i></a></li>
+      <li><a class="menu__item" href="#">Cursos<i class="material-symbols-outlined icon">school</i></a></li>
+      <li><a class="menu__item" href="#">Experiências<i class="material-symbols-outlined icon">business_center</i></a></li>
+      <li><a class="menu__item" href="#">Comentários<i class="material-symbols-outlined icon">chat</i></a></li>
+    </ul>
+    <div class="menu__theme">
+      <i class="material-symbols-outlined icon theme">format_paint</i>
+      <div class="theme-colors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </aside>
 </body>
 <script></script>
 </html>
