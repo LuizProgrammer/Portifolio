@@ -10,12 +10,12 @@
 
   <link rel="stylesheet" href="./style.css">
   <script src="./load.js" defer></script>
-  <script src="./actionB.js" defer></script>
+  <script src="./actions.js" defer></script>
 </head>
 
 <body>
 
-  <aside id="about" class="me">
+  <aside id="me" class="me">
     <header class="me">
       <i id="closeMe" class="material-symbols-outlined icon">more_vert</i>
       <div class="face">
@@ -161,17 +161,18 @@
 
   </aside><!-- aside about-me -->
 
-  <aside class="menu">
+  <aside id="menu" class="menu">
     <div class="menu__close">
-      <i class="material-symbols-outlined icon">close</i>
+      <i id="offMenu" class="material-symbols-outlined icon">close</i>
     </div>
-    <ul class="menu__items">
 
+    <ul class="menu__items">
       <li><a class="menu__item" href="#">Projetos<i class="material-symbols-outlined icon">checklist</i></a></li>
       <li><a class="menu__item" href="#">Cursos<i class="material-symbols-outlined icon">school</i></a></li>
       <li><a class="menu__item" href="#">Experiências<i class="material-symbols-outlined icon">business_center</i></a></li>
       <li><a class="menu__item" href="#">Comentários<i class="material-symbols-outlined icon">chat</i></a></li>
     </ul>
+
     <div class="menu__theme">
       <i class="material-symbols-outlined icon theme">format_paint</i>
       <div class="theme-colors">
@@ -182,6 +183,16 @@
       </div>
     </div>
   </aside>
+
+  <header class="page">
+    <i id="openMe" class="material-symbols-outlined icon">more_vert</i>
+    <i id="onMenu" class="material-symbols-outlined icon">menu</i>
+  </header>
+  <main class="page">
+    <div class="banner">
+
+    </div>
+  </main>
 </body>
 <script></script>
 </html>

@@ -66,10 +66,12 @@ i{cursor: pointer;}
 aside.me{
   position: fixed;
   top: 0;
-  left: 0;
+  left: -250px;
 
   width: 250px;
   height: 100vh;
+
+  transition: .3s;
 }
 
   /* conteudo cabeçalho */
@@ -313,18 +315,18 @@ aside.me{
 
 /* menu da pagina */
 aside.menu{
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  right: -200px;
 
   display: flex;
   align-items: center;
 
-  /* width: 3.1em; */
   width: 200px;
   height: 100vh;
 
   overflow: hidden;
+  transition: .3s;
 
   background: var(--grey-20);
 }
@@ -414,6 +416,33 @@ aside.menu{
 }
 /* menu da pagina */
 
+/* pagina */
+header.page{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--grey-15);
+}
+main.page{
+  padding: 1em;
+}
+.banner{
+  width: 100%;
+  height: 200px;
+
+  border-radius: 5px;
+  overflow: hidden;
+
+  background: var(--grey-25);
+  background-image: url("../img/header.png");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* pagina */
+
 /* Seção dos tablets */
 @media (min-width: 600px) {
   .col-tb-1 {width: 8.33%;}
@@ -431,10 +460,6 @@ aside.menu{
 }
 /* Seção dos desktops */
 @media (min-width: 768px) {
-  main.page{
-    width: calc(100% - 250px);
-    margin-left: 250px;
-  }
 
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
