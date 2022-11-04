@@ -423,7 +423,7 @@ main.page{
   overflow: hidden;
 
   background: var(--grey-25);
-  background-image: url("../img/header.png");
+  background-image: url("./header.png");
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;

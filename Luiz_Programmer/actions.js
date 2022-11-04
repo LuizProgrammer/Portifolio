@@ -40,15 +40,15 @@ const color = document.querySelector("head link:last-child");
 
 
 cor1.onclick = () =>{
-  color.setAttribute('href', '../css/cor1.css');
+  color.setAttribute('href', './cor1.css');
 }
 cor2.onclick = () =>{
-  color.setAttribute('href', '../css/cor2.css');
+  color.setAttribute('href', './cor2.css');
 }
 cor3.onclick = () =>{
-  color.setAttribute('href', '../css/cor3.css');
+  color.setAttribute('href', './cor3.css');
 }
 cor4.onclick = () =>{
-  color.setAttribute('href', '../css/cor4.css');
+  color.setAttribute('href', './cor4.css');
 }
 // mudança de cor tematica
