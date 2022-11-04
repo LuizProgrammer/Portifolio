@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 :root{
   --bar: rgba(0,0,0, .4);
-  --bar-color: #40f5ff;
 
   --grey-5: #0D0C0C;
   --grey-10: #1A1917;
@@ -114,9 +113,9 @@ aside.me{
 
     border-radius: 50%;
 
-    background: var(--bar-color);
-    box-shadow: 0px 0px 3px var(--bar-color),
-    0px 0px 10px var(--bar-color);
+    background: var(--color);
+    box-shadow: 0px 0px 3px var(--color),
+    0px 0px 10px var(--color);
   }
       .face img{
     width: 100%;
@@ -133,7 +132,7 @@ aside.me{
     letter-spacing: .2px;
   }
       .name span{
-    color: var(--bar-color);
+    color: var(--color);
   }
     .work{
     color: grey;
@@ -204,7 +203,7 @@ aside.me{
 
         fill: none;
 
-        stroke: var(--bar-color);
+        stroke: var(--color);
 
         stroke-width: 4px;
         stroke-linecap: round;
@@ -225,7 +224,7 @@ aside.me{
         border-radius: 50%;
 
         background: var(--bar);
-        box-shadow: inset 0px 0px 5px -2px var(--bar-color);
+        box-shadow: inset 0px 0px 5px -2px var(--color);
       }
       .insider{
         display: flex;
@@ -240,7 +239,7 @@ aside.me{
         border-radius: 50%;
 
         background: var(--bg);
-        box-shadow: inset 0px 0px 5px -2px var(--bar-color);
+        box-shadow: inset 0px 0px 5px -2px var(--color);
       }
       /* progressbar circular*/
       #blur{
@@ -272,10 +271,10 @@ aside.me{
         background: var(--bar);
 
         border-radius: 2px;
-        box-shadow: inset 0px 0px 5px -2px var(--bar-color);
+        box-shadow: inset 0px 0px 5px -2px var(--color);
       }
       line{
-        stroke: var(--bar-color);
+        stroke: var(--color);
 
         stroke-width: 4px;
         stroke-linecap: round;
@@ -306,7 +305,7 @@ aside.me{
       font-size: 1.5em;
     }
     .fa-brands:hover{
-      color: var(--bar-color);
+      color: var(--color);
       vertical-align: super;
       font-size: 2em;
     }
@@ -352,7 +351,7 @@ aside.menu{
 .menu__item:hover{
   padding-right: 5px;
   background: var(--grey-15);
-  color: var(--bar-color);
+  color: var(--color);
 }
 .menu__item i{
   color: inherit;
@@ -372,7 +371,7 @@ aside.menu{
   background: var(--grey-25);
 }
 .theme{
-  color: var(--bar-color);
+  color: var(--color);
 }
 .theme-colors{
   display: flex;
@@ -383,36 +382,24 @@ aside.menu{
 }
 .theme-colors div{
   border-radius: 50%;
+  width: 1em;
+  height: 1em;
+}
+.theme-colors div:hover{
   width: 1.5em;
   height: 1.5em;
 }
-.theme-colors div:nth-child(1){
-  border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
-
-  background: #40f5ff;
+.cor1{
+  background: #1DE0BF;
 }
-.theme-colors div:nth-child(2){
-  border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
-
-  background: #9A0BE3;
+.cor2{
+  background: #6D16E0;
 }
-.theme-colors div:nth-child(3){
-  border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
-
-  background: #FA2525;
+.cor3{
+  background: #E04407;
 }
-.theme-colors div:nth-child(4){
-  border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
-
-  background: #A4FA29;
+.cor4{
+  background: #E0DC12;
 }
 /* menu da pagina */
 
@@ -426,6 +413,7 @@ header.page{
 }
 main.page{
   padding: 1em;
+  height: 110vh;
 }
 .banner{
   width: 100%;
@@ -442,6 +430,8 @@ main.page{
   background-position: center;
 }
 /* pagina */
+
+
 
 /* Seção dos tablets */
 @media (min-width: 600px) {

@@ -1,3 +1,4 @@
+// abre e fecha asides
 const closeMe = document.querySelector("#closeMe");
 const openMe = document.querySelector("#openMe");
 const aboutMe = document.querySelector("#me");
@@ -27,3 +28,27 @@ on.onclick = () =>{
   openMe.style.display = "none";
   on.style.visibility = "hidden";
 }
+// abre e fecha asides
+
+// mudança de cor tematica
+const cor1 = document.querySelector("#cor1");
+const cor2 = document.querySelector("#cor2");
+const cor3 = document.querySelector("#cor3");
+const cor4 = document.querySelector("#cor4");
+
+const color = document.querySelector("head link:last-child");
+
+
+cor1.onclick = () =>{
+  color.setAttribute('href', '../css/cor1.css');
+}
+cor2.onclick = () =>{
+  color.setAttribute('href', '../css/cor2.css');
+}
+cor3.onclick = () =>{
+  color.setAttribute('href', '../css/cor3.css');
+}
+cor4.onclick = () =>{
+  color.setAttribute('href', '../css/cor4.css');
+}
+// mudança de cor tematica
