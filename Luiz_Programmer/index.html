@@ -17,9 +17,22 @@
 
 <body>
 
+  <!-- IDs :
+  S => smartphone
+  T => tablet
+  D => desktop
+
+  C => close
+  O => open
+
+  Display-class:
+  NS => no smartphone
+  NT => no tablet
+  ND => no desktop -->
+
   <aside id="me" class="me">
     <header class="me">
-      <i id="closeMe" class="material-symbols-outlined icon">more_vert</i>
+      <i id="STCMe" class="material-symbols-outlined icon ND">more_vert</i>
       <div class="face">
         <img src="https://avatars.githubusercontent.com/u/20600529?v=4" alt="foto perfil">
       </div>
@@ -165,7 +178,9 @@
 
   <aside id="menu" class="menu">
     <div class="menu__close">
-      <i id="offMenu" class="material-symbols-outlined icon">close</i>
+      <i id="STCMenu" class="material-symbols-outlined icon ND">close</i>
+      <i id="DCMenu" class="material-symbols-outlined icon ND NST">close</i>
+      <i id="DOMenu" class="material-symbols-outlined icon NST">menu</i>
     </div>
 
     <ul class="menu__items">
@@ -178,17 +193,17 @@
     <div class="menu__theme">
       <i class="material-symbols-outlined icon theme">format_paint</i>
       <div class="theme-colors">
-        <div id="cor1" class="cor1"></div>
-        <div id="cor2" class="cor2"></div>
-        <div id="cor3" class="cor3"></div>
-        <div id="cor4" class="cor4"></div>
+        <div id="cor1" class="cor1" style="--cor: #40f5ff"></div>
+        <div id="cor2" class="cor2" style="--cor: #e3eb20"></div>
+        <div id="cor3" class="cor3" style="--cor: #ea01ea"></div>
+        <div id="cor4" class="cor4" style="--cor: #eb9774"></div>
       </div>
     </div>
   </aside>
 
   <header class="page">
-    <i id="openMe" class="material-symbols-outlined icon">more_vert</i>
-    <i id="onMenu" class="material-symbols-outlined icon">menu</i>
+    <i id="SOMe" class="material-symbols-outlined icon ND">more_vert</i>
+    <i id="SOMenu" class="material-symbols-outlined icon ND">menu</i>
   </header>
   <main class="page">
     <div class="banner">

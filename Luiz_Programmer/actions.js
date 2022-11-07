@@ -1,32 +1,47 @@
 // abre e fecha asides
-const closeMe = document.querySelector("#closeMe");
-const openMe = document.querySelector("#openMe");
-const aboutMe = document.querySelector("#me");
+const closeMe = document.querySelector("#STCMe");
+const openMe = document.querySelector("#SOMe");
 
-const off = document.querySelector("#offMenu");
-const on = document.querySelector("#onMenu");
+const closeMenu = document.querySelector("#STCMenu");
+const openMenu = document.querySelector("#SOMenu");
+
+const closeDeskMenu = document.querySelector("#DCMenu");
+const openDeskMenu = document.querySelector("#DOMenu");
+
+const me = document.querySelector("#me");
 const menu = document.querySelector("#menu");
 
-closeMe.onclick = () =>{
-  aboutMe.style.left = "-250px";
-  on.style.display = "";
-  openMe.style.visibility = "visible";
-}
 openMe.onclick = () =>{
-  aboutMe.style.left = "0px";
-  on.style.display = "none";
+  me.setAttribute("class","me active-me");
+  openMenu.style.visibility = "hidden";
   openMe.style.visibility = "hidden";
 }
-
-off.onclick = () =>{
-  menu.style.right = "-200px";
-  openMe.style.display = "";
-  on.style.visibility = "visible";
+closeMe.onclick = () =>{
+  me.setAttribute("class","me");
+  openMenu.style.visibility = "visible";
+  openMe.style.visibility = "visible";
 }
-on.onclick = () =>{
-  menu.style.right = "0px";
-  openMe.style.display = "none";
-  on.style.visibility = "hidden";
+
+openMenu.onclick = () =>{
+  menu.setAttribute("class","menu active-menu");
+  openMe.style.visibility = "hidden";
+  openMenu.style.visibility = "hidden";
+}
+closeMenu.onclick = () =>{
+  menu.setAttribute("class","menu");
+  openMe.style.visibility = "visible";
+  openMenu.style.visibility = "visible";
+}
+
+openDeskMenu.onclick = ()=>{
+  menu.style.width = "200px";
+  openDeskMenu.style.display = "none";
+  closeDeskMenu.style.display = "block";
+}
+closeDeskMenu.onclick = ()=>{
+  menu.style.width = "0px";
+  closeDeskMenu.style.display = "none";
+  openDeskMenu.style.display = "block";
 }
 // abre e fecha asides
 

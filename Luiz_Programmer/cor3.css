@@ -1,3 +1,6 @@
 :root{
-  --color: #E04407 ;
+  --color: #ea01ea ; /*pink neon*/
+}
+.cor3{
+  background: var(--color);
 }

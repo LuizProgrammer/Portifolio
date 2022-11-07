@@ -1,0 +1,6 @@
+:root{
+  --color: #a19eeb ; /*lilás*/
+}
+.cor6{
+  background: var(--color);
+}

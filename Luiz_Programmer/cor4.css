@@ -1,3 +1,6 @@
 :root{
-  --color: #E0DC12 ;
+  --color: #eb9774 ; /*laranja*/
+}
+.cor4{
+  background: var(--color);
 }

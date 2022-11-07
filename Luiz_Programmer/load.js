@@ -38,6 +38,7 @@ let dev = (x,y,z) => {
     css.innerText = c;
     script.innerText = j;
 }
+
 let ing = (x,y,z) => {
     r += x;
     w += y;

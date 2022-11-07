@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 :root{
   --bar: rgba(0,0,0, .4);
 
@@ -23,6 +24,7 @@
   /* border: solid purple .5px; */
 }
 body {
+  width: 100%;
   background: var(--grey-5);
 }
 ::-webkit-scrollbar {
@@ -30,7 +32,14 @@ body {
 }
 
 /* classes reutilizavéis */
-i{cursor: pointer;}
+.active-me{transform: translateX(250px);}
+.active-menu{transform: translateX(-200px);}
+.hidden{visibility: hidden;}
+.none{display: none;}
+.NST{
+  display: none;
+}
+
 .key-value{
   display: flex;
   align-items: center;
@@ -43,6 +52,10 @@ i{cursor: pointer;}
 }
 .icon{
   padding: .5em;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .skill{
   font-size: .8em;
@@ -384,22 +397,14 @@ aside.menu{
   border-radius: 50%;
   width: 1em;
   height: 1em;
+
+  border: solid 2px var(--cor);
 }
 .theme-colors div:hover{
   width: 1.5em;
   height: 1.5em;
-}
-.cor1{
-  background: #1DE0BF;
-}
-.cor2{
-  background: #6D16E0;
-}
-.cor3{
-  background: #E04407;
-}
-.cor4{
-  background: #E0DC12;
+
+  background: var(--cor);
 }
 /* menu da pagina */
 
@@ -435,6 +440,8 @@ main.page{
 
 /* Seção dos tablets */
 @media (min-width: 600px) {
+  .NST{display: none;}
+
   .col-tb-1 {width: 8.33%;}
   .col-tb-2 {width: 16.66%;}
   .col-tb-3 {width: 25%;}
@@ -450,6 +457,26 @@ main.page{
 }
 /* Seção dos desktops */
 @media (min-width: 768px) {
+  .NST{display: block;}
+  .ND{display: none;}
+  .active-me{transform: none;}
+  .active-menu{transform: none;}
+
+  aside.me{
+    left: 0;
+  }
+
+  aside.menu{
+    right: 0;
+    width: 3em;
+    min-width: 3em;
+  }
+
+  main.page{
+    padding: 1em;
+    height: 110vh;
+    margin: 0 3em 0 250px;
+  }
 
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}

@@ -1,0 +1,6 @@
+:root{
+  --color: #7b9e08 ; /*verde musgo*/
+}
+.cor5{
+  background: var(--color);
+}

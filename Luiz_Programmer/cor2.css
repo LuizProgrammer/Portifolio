@@ -1,3 +1,6 @@
 :root{
-  --color: #6D16E0 ;
+  --color: #e3eb20 ; /*amarelo neon*/
+}
+.cor2{
+  background: var(--color);
 }
