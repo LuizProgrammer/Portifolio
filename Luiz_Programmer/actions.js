@@ -1,55 +1,61 @@
 // abre e fecha asides
-const closeMe = document.querySelector("#STCMe");
-const openMe = document.querySelector("#SOMe");
+const headerOpenMe = document.querySelector(".header-open_me");
+const headerOpenMenu = document.querySelector(".header-open_menu");
 
-const closeMenu = document.querySelector("#STCMenu");
-const openMenu = document.querySelector("#SOMenu");
+const me = document.querySelector(".about_me");
+const menu = document.querySelector(".menu");
 
-const closeDeskMenu = document.querySelector("#DCMenu");
-const openDeskMenu = document.querySelector("#DOMenu");
+const handlerMenuClose = document.querySelector(".handler-menu_close");
+const handlerMenuOpen = document.querySelector(".handler-menu_open");
 
-const me = document.querySelector("#me");
-const menu = document.querySelector("#menu");
-
-openMe.onclick = () =>{
-  me.setAttribute("class","me active-me");
-  openMenu.style.visibility = "hidden";
-  openMe.style.visibility = "hidden";
+function powerMe (action){
+  action == "close" ? closeMe() : openMe();
 }
-closeMe.onclick = () =>{
-  me.setAttribute("class","me");
-  openMenu.style.visibility = "visible";
-  openMe.style.visibility = "visible";
+const openMe = () =>{
+  me.setAttribute("class","about_me active_me");
+  headerOpenMenu.style.visibility = "hidden";
+  headerOpenMe.style.visibility = "hidden";
+}
+const closeMe = () =>{
+  me.setAttribute("class","about_me");
+  headerOpenMenu.style.visibility = "visible";
+  headerOpenMe.style.visibility = "visible";
 }
 
-openMenu.onclick = () =>{
-  menu.setAttribute("class","menu active-menu");
-  openMe.style.visibility = "hidden";
-  openMenu.style.visibility = "hidden";
+function powerMenuMobile (action){
+  action == "close" ? closeMenu() : openMenu();
 }
-closeMenu.onclick = () =>{
+const openMenu = () =>{
+  menu.setAttribute("class","menu active_menu");
+  headerOpenMe.style.visibility = "hidden";
+  headerOpenMenu.style.visibility = "hidden";
+}
+const closeMenu = () =>{
   menu.setAttribute("class","menu");
-  openMe.style.visibility = "visible";
-  openMenu.style.visibility = "visible";
+  headerOpenMe.style.visibility = "visible";
+  headerOpenMenu.style.visibility = "visible";
 }
 
-openDeskMenu.onclick = ()=>{
-  menu.style.width = "200px";
-  openDeskMenu.style.display = "none";
-  closeDeskMenu.style.display = "block";
+function powerMenuDesktop (action){
+  action == "close" ? closeDeskMenu() : openDeskMenu();
 }
-closeDeskMenu.onclick = ()=>{
+const openDeskMenu = ()=>{
+  menu.style.width = "200px";
+  handlerMenuOpen.style.display = "none";
+  handlerMenuClose.style.display = "block";
+}
+const closeDeskMenu = ()=>{
   menu.style.width = "0px";
-  closeDeskMenu.style.display = "none";
-  openDeskMenu.style.display = "block";
+  handlerMenuClose.style.display = "none";
+  handlerMenuOpen.style.display = "block";
 }
 // abre e fecha asides
 
 // mudança de cor tematica
-const cor1 = document.querySelector("#cor1");
-const cor2 = document.querySelector("#cor2");
-const cor3 = document.querySelector("#cor3");
-const cor4 = document.querySelector("#cor4");
+const cor1 = document.querySelector(".one");
+const cor2 = document.querySelector(".two");
+const cor3 = document.querySelector(".tree");
+const cor4 = document.querySelector(".four");
 
 const color = document.querySelector("head link:last-child");
 

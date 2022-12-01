@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portifolio - Luiz Programmer</title>
 
   <script src="https://kit.fontawesome.com/93abd266cb.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="stylesheet" href="./style.css">
 
@@ -17,146 +19,115 @@
 
 <body>
 
-  <!-- IDs :
-  S => smartphone
-  T => tablet
-  D => desktop
-
-  C => close
-  O => open
-
-  Display-class:
-  NS => no smartphone
-  NT => no tablet
-  ND => no desktop -->
-
-  <aside id="me" class="me">
-    <header class="me">
-      <i id="STCMe" class="material-symbols-outlined icon ND">more_vert</i>
-      <div class="face">
-        <img src="https://avatars.githubusercontent.com/u/20600529?v=4" alt="foto perfil">
-      </div>
-      <p class="name">Luiz <span>O. Martins</span></p>
-      <p class="work">Front-end Júnior</p>
+  <aside class="about_me">
+    <header class="about_me-header column">
+        <i class="material-symbols-outlined header-icon icon mobile" onclick="powerMe('close')">more_vert</i>
+        <div class="header-face">
+          <img class="face-img" src="https://avatars.githubusercontent.com/u/20600529?v=4" alt="foto perfil">
+        </div>
+        <h4 class="header-name">Luiz <span class="name-last_name">O. Martins</span></h4>
+        <p class="header-work">Front-end Júnior</p>
     </header>
 
     <!-- conteudo principal -->
-    <main class="me">
+    <main class="about_me-main">
 
-      <section class="info-me section-me">
-        <div class="key-value">
-          <p>Bairro:</p>
-          <p class="infos">Monte Castelo</p>
+      <section class="main-info about_me-main-section">
+        <div class="key_value">
+          <p class="key">Bairro:</p>
+          <p class="value">Monte Castelo</p>
         </div>
-        <div class="key-value">
-          <p>Cidade:</p>
-          <p class="infos">Fortaleza-CE</p>
+        <div class="key_value">
+          <p class="key">Cidade:</p>
+          <p class="value">Fortaleza-CE</p>
         </div>
-        <div class="key-value">
-          <p>Idade:</p>
-          <p class="age" class="data"></p>
+        <div class="key_value">
+          <p class="key">Idade:</p>
+          <p class="age value"></p>
         </div>
       </section>
 
       <!-- progressbar circular -->
-      <section class="lang_dev section-me">
+      <section class="main-lang_dev about_me-main-section">
 
-        <div class="column">
-          <div class="outer html">
-            <div class="insider">
-              <p class="skill"><span class="value_html">0</span>%</p>
+        <div class="lang_dev-circle column">
+          <div class="circle_out row html">
+            <div class="circle_in row">
+              <p class="circle-value value"><span class="value_html">0</span>%</p>
             </div>
-            <svg id="blur">
-              <circle></circle>
-            </svg>
             <svg>
               <circle></circle>
             </svg>
           </div>
-          <i class="material-symbols-outlined icons-dev">html</i>
+          <i class="material-symbols-outlined key">html</i>
         </div>
 
-        <div class="column">
-          <div class="outer css">
-            <div class="insider">
-              <p class="skill"><span class="value_css">0</span>%</p>
+        <div class="lang_dev-circle column">
+          <div class="circle_out row css">
+            <div class="circle_in row">
+              <p class="circle-value value"><span class="value_css">0</span>%</p>
             </div>
-            <svg id="blur">
-              <circle></circle>
-            </svg>
             <svg>
               <circle></circle>
             </svg>
           </div>
-          <i class="material-symbols-outlined icons-dev">css</i>
+          <i class="material-symbols-outlined key">css</i>
         </div>
 
-        <div class="column">
-          <div class="outer script">
-            <div class="insider">
-              <p class="skill"><span class="value_script">0</span>%</p>
+        <div class="lang_dev-circle column">
+          <div class="circle_out row script">
+            <div class="circle_in row">
+              <p class="circle-value value"><span class="value_script">0</span>%</p>
             </div>
-            <svg id="blur">
-              <circle></circle>
-            </svg>
             <svg>
               <circle></circle>
             </svg>
           </div>
-          <i class="material-symbols-outlined icons-dev">javascript</i>
+          <i class="material-symbols-outlined key">javascript</i>
         </div>
 
       </section>
       <!-- progressbar circular -->
 
       <!-- progressbar linear -->
-      <section class="ing section-me">
-        <p>Ingles</p>
+      <section class="main-lang_ing column about_me-main-section">
+        <p class="key">Ingles</p>
 
-        <div class="ing-area">
-          <div class="key-value">
-            <p class="skill">Reader:</p>
-            <p class="skill"><span class="value_read">0</span>%</p>
+        <div class="lang_ing-element">
+          <div class="key_value">
+            <p class="key">Reader:</p>
+            <p class="element-value value"><span class="value_read">0</span>%</p>
           </div>
-          <div class="info read">
-            <div class="bar"></div>
-            <svg id="blur">
-              <line y1="2" x1="2" y2="2" x2="216"/>
-            </svg>
+          <div class="element-info row read">
+            <div class="info-bar"></div>
             <svg>
-              <line y1="2" x1="2" y2="2" x2="216"/>
+              <line class="element-line" y1="2" x1="2" y2="2" x2="216" />
             </svg>
           </div>
         </div>
 
-        <div class="ing-area">
-          <div class="key-value">
-            <p class="skill">Writer:</p>
-            <p class="skill"><span class="value_write">0</span>%</p>
+        <div class="lang_ing-element">
+          <div class="key_value">
+            <p class="key">Writer:</p>
+            <p class="element-value value"><span class="value_write">0</span>%</p>
           </div>
-          <div class="info write">
-            <div class="bar"></div>
-            <svg id="blur">
-              <line y1="2" x1="2" y2="2" x2="216"/>
-            </svg>
+          <div class="element-info row write">
+            <div class="info-bar"></div>
             <svg>
-              <line y1="2" x1="2" y2="2" x2="216"/>
+              <line class="element-line" y1="2" x1="2" y2="2" x2="216" />
             </svg>
           </div>
         </div>
 
-        <div class="ing-area">
-          <div class="key-value">
-            <p class="skill">Listener:</p>
-            <p class="skill"><span class="value_listen">0</span>%</p>
+        <div class="lang_ing-element">
+          <div class="key_value">
+            <p class="key">Listener:</p>
+            <p class="element-value value"><span class="value_listen">0</span>%</p>
           </div>
-          <div class="info listen">
-            <div class="bar"></div>
-            <svg id="blur">
-              <line y1="2" x1="2" y2="2" x2="216"/>
-            </svg>
+          <div class="element-info row listen">
+            <div class="info-bar"></div>
             <svg>
-              <line y1="2" x1="2" y2="2" x2="216"/>
+              <line class="element-line" y1="2" x1="2" y2="2" x2="216" />
             </svg>
           </div>
         </div>
@@ -167,50 +138,166 @@
     </main>
     <!-- conteudo principal -->
 
-    <footer class="me-social">
-      <a class="fa-brands fa-whatsapp" href="#"></a>
-      <a class="fa-brands fa-linkedin-in" href="#"></a>
-      <a class="fa-brands fa-instagram" href="#"></a>
-      <a class="fa-brands fa-github" href="#"></a>
+    <footer class="about_me-footer row">
+      <a class="fa-brands fa-whatsapp footer-icon" href="#"></a>
+      <a class="fa-brands fa-linkedin-in footer-icon" href="#"></a>
+      <a class="fa-brands fa-instagram footer-icon" href="#"></a>
+      <a class="fa-brands fa-github footer-icon" href="#"></a>
     </footer>
 
   </aside><!-- aside about-me -->
 
-  <aside id="menu" class="menu">
-    <div class="menu__close">
-      <i id="STCMenu" class="material-symbols-outlined icon ND">close</i>
-      <i id="DCMenu" class="material-symbols-outlined icon ND NST">close</i>
-      <i id="DOMenu" class="material-symbols-outlined icon NST">menu</i>
+  <aside class="menu row">
+    <div class="menu-handler">
+      <i class="material-symbols-outlined icon mobile" onclick="powerMenuMobile('close')">close</i>
+      <i class="material-symbols-outlined icon handler-menu_close desktop" onclick="powerMenuDesktop('close')">close</i>
+      <i class="material-symbols-outlined icon handler-menu_open desktop" onclick="powerMenuDesktop('open')">menu</i>
     </div>
 
-    <ul class="menu__items">
-      <li><a class="menu__item" href="#">Projetos<i class="material-symbols-outlined icon">checklist</i></a></li>
-      <li><a class="menu__item" href="#">Cursos<i class="material-symbols-outlined icon">school</i></a></li>
-      <li><a class="menu__item" href="#">Experiências<i class="material-symbols-outlined icon">business_center</i></a></li>
-      <li><a class="menu__item" href="#">Comentários<i class="material-symbols-outlined icon">chat</i></a></li>
+    <ul class="menu-items">
+      <li><a class="items-item row" href="#">Projetos<i class="material-symbols-outlined item-icon icon">checklist</i></a></li>
+      <li><a class="items-item row" href="#">Cursos<i class="material-symbols-outlined item-icon icon">school</i></a></li>
+      <li><a class="items-item row" href="#">Experiências<i class="material-symbols-outlined item-icon icon">business_center</i></a></li>
+      <li><a class="items-item row" href="#">Comentários<i class="material-symbols-outlined item-icon icon">chat</i></a></li>
     </ul>
 
-    <div class="menu__theme">
-      <i class="material-symbols-outlined icon theme">format_paint</i>
-      <div class="theme-colors">
-        <div id="cor1" class="cor1" style="--cor: #40f5ff"></div>
-        <div id="cor2" class="cor2" style="--cor: #e3eb20"></div>
-        <div id="cor3" class="cor3" style="--cor: #ea01ea"></div>
-        <div id="cor4" class="cor4" style="--cor: #eb9774"></div>
+    <div class="menu-theme row">
+      <i class="material-symbols-outlined icon theme-icon">format_paint</i>
+      <div class="theme-colors row">
+        <div class="colors-color one" style="--cor: #40f5ff"></div>
+        <div class="colors-color two" style="--cor: #e3eb20"></div>
+        <div class="colors-color tree" style="--cor: #ea01ea"></div>
+        <div class="colors-color four" style="--cor: #eb9774"></div>
       </div>
     </div>
   </aside>
 
-  <header class="page">
-    <i id="SOMe" class="material-symbols-outlined icon ND">more_vert</i>
-    <i id="SOMenu" class="material-symbols-outlined icon ND">menu</i>
+  <header class="page-header row">
+    <i class="material-symbols-outlined icon header-open_me mobile" onclick="powerMe('open')">more_vert</i>
+    <i class="material-symbols-outlined icon header-open_menu mobile" onclick="powerMenuMobile('open')">menu</i>
   </header>
-  <main class="page">
-    <div class="banner">
 
-    </div>
+  <main class="page-main">
+    <article class="section-card">
+      <h1 class="h1">Testando tamanho de texto</h1>
+      <p class="sub_title">acompanhamento de titulo</p>
+      <p>Testando tamanho de texto</p>
+      <h2 class="h2">Testando tamanho de texto</h2>
+      <p class="sub_title">acompanhamento de titulo</p>
+      <p>Testando tamanho de texto</p>
+      <h3 class="h3">Testando tamanho de texto</h3>
+      <p class="sub_title">acompanhamento de titulo</p>
+      <p>Testando tamanho de texto</p>
+      <h4 class="h4">Testando tamanho de texto</h4>
+      <p class="sub_title">acompanhamento de titulo</p>
+      <p>Testando tamanho de texto</p>
+    </article>
+    
+    <section class="main-section">
+      <h2 class="h2">Projetos</h2>
+
+      <article class="section-card">
+        <div class="column">
+          <h3 class="h3">Sewing System</h3>
+          <p class="sub_title">Esse projeto trata-se de um site 
+          voltado para venda de serviços de costura</p>
+        </div>
+        
+        
+          <div class="card-project">
+            <div class="project-header row">
+              <h4 class="h4">Linguagens</h4>
+              <h4 class="h4">Habilidades</h4>
+            </div>
+            <div class="project-section row">
+              <p class="section-lang">html</p>
+              <ul class="section-list">
+                <li>Lógica de Programação</li>
+                <li>Arquitetura e Manutenção de Computadores</li>
+                <li>HTML/CSS</li>
+                <li>Sistemas Operacionais</li>
+              </ul>
+            </div>
+            <div class="project-section row">
+              <p class="section-lang">css</p>
+              <ul class="section-list">
+                <li>Lógica de Programação</li>
+                <li>Arquitetura e Manutenção de Computadores</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </div>
+            <div class="project-section row">
+              <p class="section-lang">JavaScript</p>
+              <ul class="section-list">
+                <li>Lógica de Programação</li>
+                <li>Arquitetura e Manutenção de Computadores</li>
+                <li>HTML/CSS</li>
+                <li>Sistemas Operacionais</li>
+                <li>P.O.O / Java</li>
+              </ul>
+            </div>
+            
+          </div>
+        
+        <p class="value"><span class="key">status: 
+        </span> pendente</p>
+        <div class="card-button">projeto</div>
+      </article>
+
+    </section>
+
+    <section class="main-section">
+      <h2 class="h2">Cursos</h2>
+
+      <article class="section-card">
+        <p class="sub_title">E.E.E.P Dona Creusa do Carmo Rocha</p>
+        <h3 class="h3">Técnico de Nível Medio em Informática</h3>
+        <ul class="card-list">
+          <li>Lógica de Programação</li>
+          <li>Arquitetura e Manutenção de Computadores</li>
+          <li>HTML/CSS</li>
+          <li>Sistemas Operacionais</li>
+          <li>P.O.O / Java</li>
+          <li>JavaScript / PHP</li>
+          <li>Redes de Computadores</li>
+          <li>Banco de Dados</li>
+          <li>PHP / MySQL</li>
+        </ul>
+        <p class="value"><span class="key">Período: </span> 01 / 2014 <span class="key">-</span> 12 / 2016</p>
+        <div class="card-button">Certificado</div>
+      </article>
+
+    </section>
+
+    <section class="main-section">
+      <h2 class="h2">Cometários</h2>
+      <article class="section-card">
+
+        <div class="card-person row">
+          <picture class="person-face">
+            <img class="face-img" src="https://avatars.githubusercontent.com/u/20600529?v=4" alt="foto de perfil">
+          </picture>
+          <div class="person-info">
+            <p class="person-name">Luiz de Oliveira Martins</p>
+            <p class="person-work">Font-End Developer</p>
+          </div>
+        </div>
+        
+        <div class="card-text">
+          <i class="fa-sharp fa-solid fa-quote-left"></i>
+          <p class="text-comment">
+            O Luiz(eu) é um cara bem esforçado, ele sempre teve o dia muito cheio
+            devido ao trabalho e por conta disso não conseguia tempo suficiente para estudar
+            até que ele recebeu auxilio doença e em 3 meses aprendeu tudo o que foi colocado em
+            pratica nesse portfolio.
+          </p>
+          <i class="fa-sharp fa-solid fa-quote-right"></i>
+        </div>
+
+        <p class="card-date">30 / 11 / 2022</p>
+      </article>
+    </section>
   </main>
 
 </body>
-<script></script>
 </html>
