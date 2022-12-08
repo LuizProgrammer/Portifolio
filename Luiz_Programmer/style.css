@@ -50,10 +50,6 @@
   flex-direction: column;
   align-items: center;
 }
-.row{
-  display: flex;
-  align-items: center;
-}
 .icon {
   font-size: 2em;
   color: var(--text);
@@ -64,6 +60,11 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.card{
+padding: 32px;
+background: var(--grey-18);
+border-radius: 5px;
 }
 .h1{
   color: var(--text-title);
@@ -84,7 +85,7 @@
   line-height: 1.3em;
 }
 .h4{
-  color: var(--color);
+  color: var(--text-title);
   font-size: 14px;
   font-weight: 600;
   line-height: 1.4em;
@@ -159,18 +160,9 @@ body {
 
   box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
 }
-.header-name {
-  color: var(--text-title);
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: .1em;
-}
-.name-last_name {
+.last_name {
   font: inherit;
   color: var(--color);
-}
-.header-work {
-  color: var(--text-on);
 }
 /* sobre mim cabeçalho */
 /* sobre mim corpo*/
@@ -199,6 +191,8 @@ body {
 .circle_out {
   position: relative;
 
+  display: flex;
+  align-items: center;
   justify-content: center;
 
   width: 54px;
@@ -211,6 +205,8 @@ body {
   background: var(--grey-8);
 }
 .circle_in {
+  display: flex;
+  align-items: center;
   justify-content: center;
 
   width: 100%;
@@ -260,6 +256,9 @@ circle {
 }
 .element-info {
   position: relative;
+
+  display: flex;
+  align-items: center;
 }
 .element-line {
   stroke: var(--color);
@@ -284,6 +283,8 @@ circle {
   position: absolute;
   bottom: 0;
 
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 
   width: 100%;
@@ -311,6 +312,10 @@ circle {
   top: 0;
   right: -200px;
 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
   width: 200px;
   height: 100vh;
 
@@ -332,16 +337,16 @@ circle {
 .handler-menu_close{
   display: none;
 }
-.menu-items {
+.menu-nav {
+  list-style: none;
   width: 100%;
 }
-.items-item {
+.nav-item{
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
-
-  color: grey;
 }
-.items-item:hover {
-  font-size: 1.1em;
+.nav-item:hover {
   background: var(--grey-10);
   color: var(--color);
 }
@@ -353,10 +358,10 @@ circle {
   left: 0;
   bottom: 0;
 
-  height: 40px;
-  width: 100%;
+  display: flex;
+  align-items: center;
 
-  justify-content: space-between;
+  width: 100%;
 
   background: var(--grey-14);
 }
@@ -389,6 +394,8 @@ circle {
 
   width: 100%;
 
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 
   background: var(--grey-12);
@@ -399,13 +406,6 @@ circle {
   width: 100%;
   background: var(--grey-10);
   z-index: -1;
-}
-.section-card{
-  padding: 32px ;
-  width: 100%;
-  min-width: 350px;
-  background: var(--grey-18);
-  border-radius: 5px;
 }
 .card-list {
   margin: 16px 0 16px 1.5em;
@@ -424,6 +424,9 @@ circle {
   
 }
 .card-person{
+  display: flex;
+  align-items: center;
+
   width: 100%;
 }
 .person-face{
@@ -440,14 +443,8 @@ circle {
 .person-info{margin-left: 16px;}
 .person-name{
   color: var(--color);
-  font-size: 1.2em;
-  line-height: 1.4em;
   font-weight: 400;
-}
-.person-work{
-  color: var(--text-off);
-  line-height: 1.5;
-  border-top: 1px solid var(--text-off);
+  border-bottom: 1px solid var(--text-off);
 }
 .card-text{
   margin: 16px 0px;
@@ -474,10 +471,20 @@ circle {
 }
 .project-header{
   width: 100%;
+
+  display: flex;
+  align-items: center;
   justify-content: space-around;
+
   margin: 32px 0 16px;
 }
+.project-header .h4{
+  color: var(--color);
+}
 .project-section{
+  display: flex;
+  align-items: center;
+
   width: 100%;
 }
 .section-lang{
